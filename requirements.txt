@@ -1,0 +1,10 @@
+django
+djangorestframework
+langchain
+langgraph
+langchain-google-genai
+python-dotenv
+pydantic
+google-generativeai
+djangorestframework
+langgraph-checkpoint
