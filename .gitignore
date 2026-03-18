@@ -2,34 +2,27 @@
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
-*.egg-info/
-dist/
-build/
-.eggs/
 venv/
-env/
-.venv/
+*.egg-info/
 
 # Django
 *.sqlite3
 staticfiles/
 media/
-local_settings.py
+multi_ai_agent/.env
+
+# Node / Vite
+ai-agent-ui/node_modules/
+ai-agent-ui/dist/
+ai-agent-ui/.env
 
 # Environment
 .env
 .env.local
 .env.production
 
-# Node / Vite
-node_modules/
-frontend/dist/
-frontend/.env
-.DS_Store
-
 # IDE
 .vscode/
 .idea/
 *.swp
-*.swo
+.DS_Store
