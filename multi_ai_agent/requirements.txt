@@ -11,3 +11,4 @@ langgraph-checkpoint
 gunicorn
 whitenoise
 python-dotenv
+django-cors-headers
