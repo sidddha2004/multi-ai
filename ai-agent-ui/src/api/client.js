@@ -23,3 +23,16 @@ export async function sendMessage(token, message) {
   if (!res.ok) throw new Error("Request failed");
   return res.json();
 }
+
+export async function signupUser(username, password) {
+  const res = await fetch(`${BASE}/api/signup/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username, password }),
+  });
+  if (!res.ok) {
+    const data = await res.json();
+    throw new Error(data.error || "Signup failed");
+  }
+  return res.json();
+}
