@@ -8,3 +8,6 @@ pydantic
 google-generativeai
 djangorestframework
 langgraph-checkpoint
+gunicorn
+whitenoise
+python-dotenv
