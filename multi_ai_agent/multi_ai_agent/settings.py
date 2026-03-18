@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'multi_ai_agent.wsgi.application'
 # 3. CORS settings 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",          # local Vite dev
-    "https://your-app.vercel.app",    # ← replace with your Vercel URL
+    "https://multi-siviup4ap-siddharthsolanki004-1250s-projects.vercel.app/",    # ← replace with your Vercel URL
 ]
 
 # Database
