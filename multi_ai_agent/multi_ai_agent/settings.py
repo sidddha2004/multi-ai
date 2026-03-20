@@ -84,6 +84,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",          # local Vite dev
     "https://multi-siviup4ap-siddharthsolanki004-1250s-projects.vercel.app/",    # ← replace with your Vercel URL
 ]
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+]
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases

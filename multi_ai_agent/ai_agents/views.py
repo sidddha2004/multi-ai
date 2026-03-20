@@ -57,4 +57,4 @@ def signup(request):
     if User.objects.filter(username=username).exists():
         return Response({"error": "Username already taken"}, status=400)
     user = User.objects.create_user(username=username, password=password)
-    return Response({"message": "Account created successfully"})
+    return Response({"message": "Account created"}, status=201)
