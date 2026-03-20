@@ -50,6 +50,7 @@ from rest_framework.permissions import AllowAny
 @api_view(["POST"])
 @permission_classes([AllowAny])
 def signup(request):
+    print("DATA:", request.data)  # ← add this
     username = request.data.get("username")
     password = request.data.get("password")
     if not username or not password:
