@@ -30,9 +30,7 @@ export async function signupUser(username, password) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password }),
   });
-  if (!res.ok) {
-    const data = await res.json();
-    throw new Error(data.error || "Signup failed");
-  }
-  return res.json();
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || "Signup failed");
+  return data;
 }
