@@ -25,12 +25,15 @@ export async function sendMessage(token, message) {
 }
 
 export async function signupUser(username, password) {
+  console.log("Calling:", `${BASE}/api/signup/`);
   const res = await fetch(`${BASE}/api/signup/`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password }),
   });
-  const data = await res.json();
+  const text = await res.text();
+  console.log("Response:", text);
+  const data = JSON.parse(text);
   if (!res.ok) throw new Error(data.error || "Signup failed");
   return data;
 }
